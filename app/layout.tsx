@@ -16,7 +16,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`font-sans antialiased ${inter.className}`}>
+        <div className="flex flex-col min-h-screen bg-white">
+          <header className="sticky top-0 z-20 flex items-center justify-between w-full px-4 py-3 h-14 bg-background">
+            <span className="font-mono text-xl font-bold">v0S</span>
+          </header>
+          {children}
+        </div>
+      </body>
     </html>
   )
 }

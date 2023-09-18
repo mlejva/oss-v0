@@ -1,0 +1,8 @@
+# This is a config for a Devbook environment
+
+title = "e2b-v0s-demo"
+template = "Nodejs"
+id = "TePaMNZBUWNr"
+
+[filesystem]
+local_root = "."
